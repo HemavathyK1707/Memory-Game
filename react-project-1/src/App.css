@@ -1,0 +1,13 @@
+.selectBox{
+    height: 10px;
+    width: 40px;
+    margin-left: 10px;
+    border: 2px double black;
+    border-radius: 10px;
+}
+
+.heading,.select{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+

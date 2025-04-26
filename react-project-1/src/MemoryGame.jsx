@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react'
+import './App.css'
 
 function MemoryGame() {
     const[gridSize , setGridSize]=useState(4);
@@ -83,7 +84,7 @@ function MemoryGame() {
   className="gameBoard"
   style={{
     display: "grid",
-    gridTemplateColumns: `repeat(${gridSize}, 80px)`,
+    gridTemplateColumns: `repeat(${gridSize}, 100px)`,
     gap: "10px"
     
     
@@ -96,6 +97,7 @@ function MemoryGame() {
   style={{
     backgroundColor: isFlipped(card.id) ? 'blue' : '#ddd',
     color: isFlipped(card.id) ? 'white' : 'transparent',
+
   }}
   >
 {isFlipped(card.id) ? card.number : "?"}
